@@ -65,5 +65,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Fastboot
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/motorola/scout/scout-vendor.mk)
