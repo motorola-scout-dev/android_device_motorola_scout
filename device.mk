@@ -9,5 +9,8 @@ DEVICE_PATH := device/motorola/scout
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/motorola/scout/scout-vendor.mk)
