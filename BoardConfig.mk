@@ -11,6 +11,15 @@ TARGET_ARCH_VARIANT := armv8-2a-dotprod
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a78
 
+# Virtual A/B
+AB_OTA_PARTITIONS := \
+    product \
+    system \
+    system_dlkm \
+    system_ext \
+    vendor \
+    vendor_dlkm
+
 # Boot Image
 AB_OTA_PARTITIONS += \
     boot
