@@ -1,6 +1,7 @@
 # MTK platform .rc configure
 
 import ${ro.vendor.rc}init.cgroup.rc
+import /vendor/etc/init/hw/init.mt6878.power.rc
 import ${ro.vendor.rc}init.connectivity.rc
 # import ${ro.vendor.rc}init.mt6878.usb.rc
 import /vendor/etc/init/hw/init.project.rc
