@@ -247,7 +247,8 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayScout
     SettingsResOverlayScout
     TetheringConfigOverlay \
-    WifiOverlay
+    WifiOverlay \
+    EuiccOverlay
 
 # Power
 PRODUCT_PACKAGES += \
