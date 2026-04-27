@@ -968,14 +968,8 @@ product/etc/permissions/privapp-permissions-com.google.android.euicc.xml
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
 # Face unlock
-#vendor/bin/hw/android.hardware.biometrics.face-service.face-isv
-#vendor/etc/init/android.hardware.biometrics.face-service.face.rc
-#vendor/etc/vintf/manifest/face-default_3.xml
 
 # Felica
-product/etc/felica/common.cfg
-product/etc/felica/mfm.cfg
-product/etc/felica/mfs.cfg
 product/priv-app/MobileFeliCaClient/MobileFeliCaClient.apk;PRESIGNED
 
 # FDR
@@ -1401,6 +1395,60 @@ vendor/lib64/vendor.mediatek.framework.mtksf_ext-V2-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkpower_applist-V1-ndk.so
 vendor/lib64/lib_power_applist.so
 
+# Picture Quality
+vendor/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service
+vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service
+vendor/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc
+vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc
+vendor/etc/pq_flag.xml
+vendor/etc/cust_color.xml
+vendor/etc/cust_pq.xml
+vendor/etc/boe_vtdr6126a_667_1220_2712_C3D_default.txt
+vendor/etc/boe_vtdr6126a_667_1220_2712_C3D_p3.txt
+vendor/etc/boe_vtdr6126a_667_1220_2712_C3D_srgb.txt
+vendor/etc/boe_vtdr6126a_667_1220_2712_eph8611_C3D_default.txt
+vendor/etc/boe_vtdr6126a_667_1220_2712_eph8611_C3D_p3.txt
+vendor/etc/boe_vtdr6126a_667_1220_2712_eph8611_C3D_srgb.txt
+vendor/etc/boe_vtdr6126a_667_1220_2712_eph8611_pq.xml
+vendor/etc/boe_vtdr6126a_667_1220_2712_pq.xml
+vendor/etc/csot_nt37706_667_1220_2712_C3D_default.txt
+vendor/etc/csot_nt37706_667_1220_2712_C3D_p3.txt
+vendor/etc/csot_nt37706_667_1220_2712_C3D_srgb.txt
+vendor/etc/csot_nt37706_667_1220_2712_pq.xml
+vendor/etc/vintf/manifest/manifest_mmlpq.xml
+vendor/lib64/hw/mt6878/vendor.mediatek.hardware.pq_aidl-impl.so:vendor/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so
+vendor/lib64/libpqframework.so
+vendor/lib64/libpqhdrmetaparser.so
+vendor/lib64/libpqsharememory.so
+vendor/lib64/libpqtuning.so
+vendor/lib64/libpqxmlflagparser.so
+vendor/lib64/libpqxmlparser.so
+vendor/lib64/librgbwlightsensor.so
+vendor/lib64/libscltm.so
+vendor/lib64/mt6878/libmml.so:vendor/lib64/libmml.so
+vendor/lib64/mt6878/libmmlpqImpl.so:vendor/lib64/libmmlpqImpl.so
+vendor/lib64/mt6878/libpq_cust_base.so:vendor/lib64/libpq_cust_base.so
+vendor/lib64/mt6878/libpq_sec.so:vendor/lib64/libpq_sec.so
+vendor/lib64/mt6878/libpqconfig.so:vendor/lib64/libpqconfig.so
+vendor/lib64/mt6878/libpqparamparser.so:vendor/lib64/libpqparamparser.so
+vendor/lib64/vendor.mediatek.hardware.mmlpq-V3-ndk.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.11.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.1.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.2.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.3.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.4.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.5.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
+vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
+vendor/lib64/vendor.mediatek.hardware.pq_aidl-V3-ndk.so
+vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so
+vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so
+
 # Public libraries
 vendor/etc/public.libraries.txt
 
@@ -1585,7 +1633,6 @@ vendor/bin/hw/motorola.hardware.sensorext-service
 vendor/etc/init/motorola.hardware.sensorext.service.rc
 vendor/lib64/motorola.hardware.sensors-V2-ndk.so
 
-
 # Thermal
 vendor/bin/hw/android.hardware.thermal-service.mediatek:vendor/bin/hw/android.hardware.thermal-service.mediatek.scout
 vendor/bin/thermal_core
@@ -1603,6 +1650,39 @@ vendor/etc/thermal/disable_thermal_temp.conf
 vendor/etc/thermal/disable_throttling.conf
 vendor/etc/thermal/fix_ttj_85.conf
 vendor/etc/thermal/fix_ttj_95.conf
+vendor/etc/thermal/scout/thermal.conf
+vendor/etc/thermal/scout/thermal_kpoc.conf
+vendor/etc/thermal/scout/thermal_policy_04.conf
+vendor/etc/thermal/scout/thermal_policy_05.conf
+vendor/etc/thermal/scout/thermal_policy_06.conf
+vendor/etc/thermal/scout/thermal_policy_09.conf
+vendor/etc/thermal/scout/thermal_policy_11.conf
+vendor/etc/thermal/scout/thermal_policy_12.conf
+vendor/etc/thermal/scout/thermal_policy_13.conf
+vendor/etc/thermal/scout/thermal_policy_14.conf
+vendor/etc/thermal/scout/thermal_policy_17.conf
+vendor/etc/thermal/scoutp/thermal.conf
+vendor/etc/thermal/scoutp/thermal_kpoc.conf
+vendor/etc/thermal/scoutp/thermal_policy_04.conf
+vendor/etc/thermal/scoutp/thermal_policy_05.conf
+vendor/etc/thermal/scoutp/thermal_policy_06.conf
+vendor/etc/thermal/scoutp/thermal_policy_09.conf
+vendor/etc/thermal/scoutp/thermal_policy_11.conf
+vendor/etc/thermal/scoutp/thermal_policy_12.conf
+vendor/etc/thermal/scoutp/thermal_policy_13.conf
+vendor/etc/thermal/scoutp/thermal_policy_14.conf
+vendor/etc/thermal/scoutp/thermal_policy_17.conf
+vendor/etc/thermal/scoutp_jp/thermal.conf
+vendor/etc/thermal/scoutp_jp/thermal_kpoc.conf
+vendor/etc/thermal/scoutp_jp/thermal_policy_04.conf
+vendor/etc/thermal/scoutp_jp/thermal_policy_05.conf
+vendor/etc/thermal/scoutp_jp/thermal_policy_06.conf
+vendor/etc/thermal/scoutp_jp/thermal_policy_09.conf
+vendor/etc/thermal/scoutp_jp/thermal_policy_11.conf
+vendor/etc/thermal/scoutp_jp/thermal_policy_12.conf
+vendor/etc/thermal/scoutp_jp/thermal_policy_13.conf
+vendor/etc/thermal/scoutp_jp/thermal_policy_14.conf
+vendor/etc/thermal/scoutp_jp/thermal_policy_17.conf
 vendor/etc/thermal/thermal.conf
 vendor/etc/thermal/thermal_kpoc.conf
 vendor/etc/thermal/thermal_mtbf.conf
@@ -1612,10 +1692,15 @@ vendor/etc/thermal/thermal_policy_02.conf
 vendor/etc/thermal/thermal_policy_03.conf
 vendor/etc/thermal/thermal_policy_04.conf
 vendor/etc/thermal/thermal_policy_05.conf
+vendor/etc/thermal/thermal_policy_06.conf
 vendor/etc/thermal/thermal_policy_08.conf
 vendor/etc/thermal/thermal_policy_09.conf
+vendor/etc/thermal/thermal_policy_10.conf
 vendor/etc/thermal/thermal_policy_11.conf
 vendor/etc/thermal/thermal_policy_12.conf
+vendor/etc/thermal/thermal_policy_13.conf
+vendor/etc/thermal/thermal_policy_14.conf
+vendor/etc/thermal/thermal_policy_17.conf
 
 # Trusted Execution Environment (TEE)
 vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
