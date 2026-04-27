@@ -181,6 +181,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Felica
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/felica/,$(TARGET_COPY_OUT_PRODUCT)/etc/felica/)
+
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek
